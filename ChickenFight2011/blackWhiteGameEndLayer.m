@@ -31,8 +31,8 @@
 {
     if((self=[super init]))
     {
-        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"showGameMenu.m4a"];//play 
+      
+//        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"showGameMenu.m4a"];//play 
         
         //size = [[CCDirector sharedDirector] winSize];
         myChickens* chickenClass = [[myChickens alloc] init];

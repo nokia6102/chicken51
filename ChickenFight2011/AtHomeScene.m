@@ -94,7 +94,7 @@
 
 -(void)gotoGameMenuScene
 {
-   [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"showGameMenu.m4a"];
+   [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"battle2.m4a"];
     [[CCDirector sharedDirector] replaceScene:[GameMenuLayer scene]];
 }
 

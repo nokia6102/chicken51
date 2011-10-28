@@ -268,7 +268,7 @@ int blowTime=10;
     //比較輸贏
     //贏
     if(distancePointer>=100){
-        
+         [[SimpleAudioEngine sharedEngine] playEffect:@"youwin.m4a"];
         id comFly = [CCSpawn actions:[CCMoveTo actionWithDuration:2 position:ccp(screenSize.width-5, screenSize.height)], [CCScaleTo actionWithDuration:2 scale:0],
                      [CCRotateTo actionWithDuration:2 angle:180.0],
                      nil];
@@ -290,7 +290,7 @@ int blowTime=10;
         
         
         //敵方飛走
-        
+       
         [gameResult setString: @"YOU WIN!"];
         gameResult.color=ccRED;
         gameResult.position=CGPointMake(screenSize.width/2, screenSize.height/2);
@@ -308,7 +308,7 @@ int blowTime=10;
         
     } else if(distancePointer<=-100){
         //else if(sumo_com_push.position.x<=80.0){ //輸
-        
+        [[SimpleAudioEngine sharedEngine] playEffect:@"youlose.m4a"];
         sumo_com_push.visible=YES;
         animatingChicken.visible=NO;
         //testNode.visible=NO;
