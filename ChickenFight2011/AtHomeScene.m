@@ -83,6 +83,7 @@
 
 -(void)gotoGameMenu:(id)sender
 {
+  
     CCMenuItem* item = (CCMenuItem*) sender;
     if (item.tag == 5) {
         [item runAction:[CCSequence actions:[CCJumpTo actionWithDuration:0.3 position:item.position height:10 jumps:2],
@@ -93,6 +94,7 @@
 
 -(void)gotoGameMenuScene
 {
+   [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"showGameMenu.m4a"];
     [[CCDirector sharedDirector] replaceScene:[GameMenuLayer scene]];
 }
 
