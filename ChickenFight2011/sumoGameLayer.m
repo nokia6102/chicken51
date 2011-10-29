@@ -12,8 +12,6 @@
 
 @implementation sumoGameLayer
 
-int blowTime=10;
-
 +(CCScene *) scene
 {
 	// 'scene' is an autorelease object.
@@ -190,9 +188,7 @@ int blowTime=10;
     
     //亂數
     NSInteger sumoRandon;
-    NSInteger r1 = arc4random()%10 +1;
-    NSInteger r2 = arc4random()%10 +1;
-    sumoRandon = (r1+r2)%10 + 1;
+    sumoRandon = arc4random()%10 + 1;
     //NSLog(@"sumoRandon = %d", sumoRandon); 
     
     distancePointer+=(highValue-sumoRandon);
@@ -387,12 +383,11 @@ int blowTime=10;
         sumo_user_ready2.visible=NO;
         sumo_user_push.visible=YES;
         
-        sumo_com_ready.visible=NO;
-        sumo_com_push.visible=YES;
-        
      break;
      case 5:
         [self blowStart];
+        sumo_com_ready.visible=NO;
+        sumo_com_push.visible=YES;
         timeTest.visible=NO;
         time30.visible=YES;
      break;

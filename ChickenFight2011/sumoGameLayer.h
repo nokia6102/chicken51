@@ -20,6 +20,7 @@
     double lowPassResults;
     int highValue;
     UILabel *level;
+    NSInteger blowTime;
     CCSprite *bg;
     CCSprite *sumo_com_push;
     CCSprite *sumo_com_ready;
