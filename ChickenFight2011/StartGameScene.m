@@ -9,6 +9,10 @@
 #import "StartGameScene.h"
 #import "ChooseRole.h"
 #import "inputChickenNameLayer.h"
+<<<<<<< HEAD
+=======
+#import "SimpleAudioEngine.h"
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
 
 @implementation StartGameScene
 
@@ -23,7 +27,14 @@
 -(id)init
 {
     if((self=[super init]))
+<<<<<<< HEAD
     {        
+=======
+    {   
+      
+      [[SimpleAudioEngine sharedEngine] playEffect:@"chicken5.m4a"]; 
+
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
         CCLOG(@"%@:%@",NSStringFromSelector(_cmd),self);
         //self.isAccelerometerEnabled = YES;
         self.isTouchEnabled=YES;

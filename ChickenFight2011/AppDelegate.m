@@ -13,7 +13,10 @@
 #import "GameConfig.h"
 #import "RootViewController.h"
 #import "StartGameScene.h"
+<<<<<<< HEAD
 #import "sumoGameLayer.h"
+=======
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
 
 @implementation AppDelegate
 

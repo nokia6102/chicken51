@@ -83,6 +83,10 @@
 
 -(void)gotoGameMenu:(id)sender
 {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     CCMenuItem* item = (CCMenuItem*) sender;
     if (item.tag == 5) {
         [item runAction:[CCSequence actions:[CCJumpTo actionWithDuration:0.3 position:item.position height:10 jumps:2],
@@ -93,6 +97,10 @@
 
 -(void)gotoGameMenuScene
 {
+<<<<<<< HEAD
+=======
+   [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"battle2.m4a"];
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     [[CCDirector sharedDirector] replaceScene:[GameMenuLayer scene]];
 }
 

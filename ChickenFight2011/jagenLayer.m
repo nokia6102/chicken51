@@ -7,7 +7,11 @@
 //
 
 #import "jagenLayer.h"
+<<<<<<< HEAD
 
+=======
+#import "SimpleAudioEngine.h"
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
 
 
 @implementation jagenLayer
@@ -59,6 +63,7 @@
 
 +(CCNode *)countdown
 {
+<<<<<<< HEAD
     CCNode *myCountdownNode = [CCNode node];
    
     CCSprite * countdown3 = [CCSprite spriteWithFile:@"countdown3.png"];
@@ -66,18 +71,41 @@
     
     [myCountdownNode addChild:countdown3 z:0 tag:0];
     
+=======
+  NSInteger i;
+  i++;
+    CCNode *myCountdownNode = [CCNode node];
+    
+    CCSprite * countdown3 = [CCSprite spriteWithFile:@"countdown3.png"];
+        countdown3.scale = 0.5;
+ 
+    [myCountdownNode addChild:countdown3 z:0 tag:0];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"hui321go-2.mp3"];
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     [countdown3 runAction:[CCSequence actions:[CCScaleTo actionWithDuration:0.5 scale:1.5],
                                         [CCFadeOut actionWithDuration:0.5],
                                         [CCHide action],
                                         nil]];
     //[myCountdownNode removeChildByTag:0 cleanup:YES];
+<<<<<<< HEAD
     CCSprite * countdown1 = [CCSprite spriteWithFile:@"countdown1.png"];
+=======
+  
+    CCSprite * countdown1 = [CCSprite spriteWithFile:@"countdown1.png"];
+ 
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     CCSprite * countdown2 = [CCSprite spriteWithFile:@"countdown2.png"];
     countdown1.scale = 0.5;
     countdown2.scale = 0.5;
 
+<<<<<<< HEAD
     [myCountdownNode addChild:countdown2 z:1 tag:1];
     
+=======
+   
+    [myCountdownNode addChild:countdown2 z:1 tag:1];
+
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     [countdown2 runAction:[CCSequence actions:
                            [CCHide action],
                                         [CCDelayTime actionWithDuration:1.0],
@@ -85,9 +113,17 @@
                                         [CCScaleTo actionWithDuration:0.5 scale:1.5],
                                         [CCFadeOut actionWithDuration:0.5],
                                         nil]];
+<<<<<<< HEAD
 //    //[myCountdownNode removeChildByTag:0 cleanup:YES];
     [myCountdownNode addChild:countdown1 z:1 tag:1];
     
+=======
+  
+//    //[myCountdownNode removeChildByTag:0 cleanup:YES];
+
+    [myCountdownNode addChild:countdown1 z:1 tag:1];
+
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     [countdown1 runAction:[CCSequence actions:
                            [CCHide action],
                            [CCDelayTime actionWithDuration:2.0],

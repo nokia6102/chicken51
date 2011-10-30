@@ -27,9 +27,12 @@
 {
     if((self=[super init]))
     {
+<<<<<<< HEAD
         [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"showGameMenu.m4a"];//play 
 
+=======
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
         size = [[CCDirector sharedDirector] winSize];
         
         CCSprite *gameMenuBg = [CCSprite spriteWithFile:@"bg.png"];
@@ -84,8 +87,12 @@
 -(void)BackToHome:(id)sender
 {
     size = [self getMyWinSize];
+<<<<<<< HEAD
     [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
      
+=======
+ 
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     CCMenuItem* item = (CCMenuItem*)sender;
     if(item.tag == 7)
     {
@@ -94,12 +101,18 @@
                          nil]];
    
     }
+<<<<<<< HEAD
     //[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"home.m4a"];
+=======
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
 }
 
 -(void)gobackToHome
 {
+<<<<<<< HEAD
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"home.m4a"];
+=======
+>>>>>>> a197d78c93d836e3e4912f773f752360c9326adc
     [[CCDirector sharedDirector]replaceScene:[AtHomeScene scene]];
 }
 
